@@ -2,10 +2,57 @@ body {
   background-color: white;
   font-family: "Roboto", sans-serif;
 }
-.app {
+.weather-app {
   background: linear-gradient(
     109.5deg,
     rgb(13, 11, 136) 9.4%,
     rgb(86, 255, 248) 78.4%
   );
+  max-width: 500px;
+  height: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+.search-input {
+  background-color: white;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 10px;
+}
+.search-button {
+  font-size: 16px;
+  background-color: rgb(13, 11, 136);
+  color: white;
+  border: none;
+  padding: 10px;
+  line-height: 1;
+  border-radius: 5px;
+}
+header {
+  padding-bottom: 30px;
+}
+main {
+  padding: 0 30px 30px 30px;
+  height: 300px;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 10px 0 10px 0;
+}
+.current-weather {
+  text-align: center;
+}
+.current-weather span {
+  font-size: 60px;
+  margin: 10px 0 10px 0;
+}
+footer {
+  text-align: center;
+  padding-top: 15px;
+  color: black;
 }

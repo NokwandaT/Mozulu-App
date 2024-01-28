@@ -13,13 +13,14 @@
     <title>Mozulu App</title>
   </head>
   <body>
-    <div id="app">
+    <div class="weather-app">
       <header>
         <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            class="search-input"
             id="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
@@ -27,7 +28,7 @@
       </header>
       <main>
         <h1>Paris</h1>
-        <div>
+        <div class="current-weather">
           <span>⛅</span>
           <span>10℃</span>
           <div>Moderate rain</div>
