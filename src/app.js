@@ -33,17 +33,29 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Sydney");
 
-let forecast = document.querySelector("#forecast");
+function displayForecast() {
+  let days = ["Sun", "Mon", "Tues", "Weds", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
 
-forecast.innerHTML = `
-<span class="weather-forecas-date"> Sun </span>
-            <span class="forecast-icon"
-              ><img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div>
+        <span class="weather-forecas-date">${days} </span>
+        <span class="forecast-icon"
+        ><img
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
                 alt=""
             /></span>
-            <span class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperatures-min"
+        <span class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperatures-max"
                 ><strong>18℃</strong></span
-              >/
-`;
+              >/</span>
+        <span class = "weather-forecast-temperatures-min" >12℃</span>
+      </div>`;
+  });
+
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+displayForecast();
