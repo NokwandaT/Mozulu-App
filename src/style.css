@@ -58,23 +58,34 @@ h1 {
   position: relative;
   top: 20px;
 }
-ul {
-  list-style: none;
-}
-li {
+
+.weather-forecast {
   text-align: center;
-  width: 75%;
+  width: 95%;
   display: block;
-  margin-left: 40px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    109.5deg,
+    rgb(13, 11, 136) 9.4%,
+    rgb(86, 255, 248) 78.4%
+  );
 }
-.day1 {
+.weather-forecast-day {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 85px;
+  column-gap: 50px;
+  height: 80px;
+  border-bottom: 0.5px solid rgb(164, 172, 244);
+}
+.forecast-icon {
+  text-align: left;
 }
 .weather-forecast-temperatures {
-  width: 80px;
+  width: 120px;
+  text-align: left;
 }
 footer {
   text-align: center;

@@ -40,8 +40,8 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `<div>
-        <span class="weather-forecas-date">${days} </span>
+      `<div class= "weather-forecast-day">
+        <span class="weather-forecas-date">${day} </span>
         <span class="forecast-icon"
         ><img
           src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
@@ -50,8 +50,9 @@ function displayForecast() {
         <span class="weather-forecast-temperatures">
               <span class="weather-forecast-temperatures-max"
                 ><strong>18℃</strong></span
-              >/</span>
+              >
         <span class = "weather-forecast-temperatures-min" >12℃</span>
+        </span>
       </div>`;
   });
 
