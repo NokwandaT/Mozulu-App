@@ -82,11 +82,16 @@ h1 {
 }
 .forecast-icon {
   text-align: left;
+  position: relative;
+  top: -20px;
+  height: 45px;
+  width: 45px;
 }
 .weather-forecast-temperatures {
   width: 120px;
   text-align: left;
 }
+
 footer {
   text-align: center;
   padding-top: 15px;
