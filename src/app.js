@@ -13,8 +13,6 @@ function refreshWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
   temperatureElement.innerHTML = Math.round(temperature);
-
-  console.log(response.data);
 }
 
 function searchCity(city) {
@@ -34,3 +32,18 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Sydney");
+
+let forecast = document.querySelector("#forecast");
+
+forecast.innerHTML = `
+<span class="weather-forecas-date"> Sun </span>
+            <span class="forecast-icon"
+              ><img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+                alt=""
+            /></span>
+            <span class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperatures-min"
+                ><strong>18℃</strong></span
+              >/
+`;
